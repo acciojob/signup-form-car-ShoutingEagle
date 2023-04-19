@@ -6,55 +6,54 @@
 	<meta charset="utf-8";>
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
-	<title>Signup FOrm Car</title>
+	<title>Signup Form Car</title>
 </head>
 
 <body>
 	<h1>Signup Form Car</h1>
 	<form method="post">
 		<p><label for="name">Name*</label>
-		<input type="text" name="userName" id="name" required></p>
+		<input type="text" name="userName" id="name" required placeholder="Sameer Paul"></p>
 		
 		<p><label for="email">Email*</label>
-		<input type="text" name="userEmail" id="email" required></p>
+		<input type="text" name="userEmail" id="email" required placeholder="sameerpaul58@gmail.com"></p>
 	
 		
 		<p>
 		<legend>Gender*</legend>
-		<input type="radio" name="gender" id="male" required>Male
-		<input type="radio" name="gender" id="male" required>Female
-		<input type="radio" name="gender" id="male" required>Transgender
+		<input type="radio" name="gender" id="gender_m" required>Male
+		<input type="radio" name="gender" id="gender_f" required>Female
 		</p>
 
 
 		<p>
 		<label for="brands">Car Brands*</label>
-			<select name="carBrand" id="carBrand" required>
-				<option value="">--Please choose an option--</option>
-				<option value="bmw">BMW</option>
-				<option value="audi">Audi</option>
-				<option value="mercedes">Mercedes</option>
+			<select name="carBrand" id="cars" required>
+				<option value="" id="cars" placeholder="--Please choose an option--">--Please choose an option--</option>
+				<option value="bmw" id="cars">BMW</option>
+				<option value="audi" id="cars">Audi</option>
+				<option value="mercedes" id="cars">Mercedes</option>
 			</select>
 		</p>
 
 		<p><label for="age">Age*</label>
-		<input type="number" name="age" id="age" required></p>
+		<input type="number" name="age" id="age" required placeholder="32"></p>
 
 		<p><label for="dob">DOB*</label>
 		<input type="date" name="dob" id="dob" required></p>
 
 		<p><label for="number">Phone Number</label>
-		<input type="tel" name="number" id="number" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
+		<input type="tel" name="number" id="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
 
 		<p><label for="password">Password*</label>
-		<input type="password" name="password" id="password" required></p>
+		<input type="password" name="password" id="password" required placeholder="xxxxxxxx"></p>
 	
 		<p>
-		<input type="checkbox" name="consent" id="consent" required>   I agree to the TOS.</p> 
+		<input type="checkbox" name="consent" id="tos" required>   I agree to the TOS.</p> 
 		
 
 
-		<button>Submit</button>
+		<button type="submit">Submit</button>
 	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
